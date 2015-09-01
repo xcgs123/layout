@@ -1,0 +1,84 @@
+function sum(){
+  
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" >
+   <title>布局S</title>
+   <style type="text/css">
+       body,html,.parent{
+       	margin: 0;
+       	height: 100%;
+       	/*overflow: hidden;*/
+       	font: bold 15px/2 serif;
+       }
+       .parent{
+       	display: flex;
+       	flex-direction:column;
+       }
+       .top{
+       	border:1px solid green;
+       	padding: 10px;
+       }
+       .logo{
+       	float: left;
+       	height: 50px;
+       	width: 80px;
+       	border:1px solid #CA9EA4;
+       	font-size: 20px;
+       }
+       .name{
+       	float: right;
+       	margin-top: 20px;
+       	border: 1px solid black;
+       	text-align: right;
+       	width: 100px;
+       }
+       /*清除浮动*/
+        .floatfix:after{
+        	content: "";
+        	display: table;
+        	clear: both;
+        }
+        .floatfix{
+        	*zoom:1;
+        }
+
+       .middle{
+       	flex:1;
+       	display: flex;
+       	margin: 10px 0px;
+       }
+       .content{
+       	 flex:1;
+       	 overflow: auto;
+       	 border: 1px solid #2B2676;
+       }
+       .aside{
+       	  margin-left: 20px;
+          border: 1px solid #8E3C43;
+          width: 200px;
+       }
+       .foot{
+          text-align: center;
+          border:1px solid black;
+
+       }
+   </style>
+</head>
+<body>
+   <div class="parent">
+   <div class="top floatfix">
+   	  <div class="logo">logo</div>
+   	  <div class="name">用户名</div>
+   </div>
+   <div class="middle">
+   	   <div class="content">content</div>
+   	   <div class="aside">aside</div>
+   </div>
+   <div class="foot">footer</div>
+   </div>
+</body>
+</html>

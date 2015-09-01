@@ -1,0 +1,32 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width:600px;
+	height: 375px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid black;
+}
+.list{
+	position: absolute;
+    width: 3000px;
+    z-index: 1;
+}
+.arrow{
+	position: absolute;
+    float: left;
+    top:50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 5em;
+    z-index: 2;
+}
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
