@@ -1,0 +1,72 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width:600px;
+	height: 375px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid black;
+}
+.list{
+	position: absolute;
+    width: 3000px;
+    z-index: 1;
+}
+.arrow{
+	position: absolute;
+    float: left;
+    top:50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 5em;
+    z-index: 2;
+}
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+
+/*二级菜单控制*/
+*{
+        margin:0px;
+        padding:0px;
+    }
+    .drag{
+  position:absolute;
+  width:100px;
+  height:200px;
+}
+
+.but{
+    width:100px;
+    height:30px;
+}
+.menu{
+  display:none;
+  list-style:none;
+  border:1px solid black;
+  position:absolute;
+  width:100px;
+}
+
+.menu li{
+  margin-bottom:5px;
+}
+.drag:hover #menu0{
+  display:block;
+}
+
+#menu0 li:hover #menu1{
+  display:block;
+  left:100px;
+  top:70px;
+}
+li:hover{
+  border:1px solid;
+}
