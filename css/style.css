@@ -1,37 +1,18 @@
-*{
-	padding: 0px;
-	margin: 0px;
+/* 滚动图 */
+.poster-main{
+  position: absolute;
+  width:200px;
+  height:100px;
+  background-color: red;
 }
-.container{
-	width:600px;
-	height: 375px;
-	overflow: hidden;
-	position: relative;
-	border: 1px solid black;
+.poster-list{
+  width:800px;
+  height: 270px;
 }
-.list{
-	position: absolute;
-    width: 3000px;
-    z-index: 1;
+.poster-btn{
+  width: 100px;
+  height: 
 }
-.arrow{
-	position: absolute;
-    float: left;
-    top:50%;
-    transform: translateY(-50%);
-    color: black;
-    font-size: 5em;
-    z-index: 2;
-}
-#prev {
-    left: 0;
-}
-
-#next {
-    right: 0;
-}
-
-
 /*二级菜单控制*/
 *{
         margin:0px;
